@@ -1,35 +1,114 @@
 ﻿@model IEnumerable<TeslaDrive.Models.PalmaCity>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "PalmaCity";
 }
 
-<h1>Index</h1>
+<h1>Welcome to Palma City TeslaDrive!</h1>
+<br />
+<h2>Pick a car you'd like to rent.</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                <p>Model</p>
+            </th>
+            <th>
+                <p>Horsepower</p>
+            </th>
+            <th>
+                <p>Range</p>
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                <p>Model S P85</p>
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <p>470</p>
+            </td>
+            <td>
+                <p>426</p>
+            </td>
+            <td>
+                <a type="button" class="btn btn-success" asp-controller="Cars" asp-action="Details" asp-route-id="2">Rent</a>
             </td>
         </tr>
-}
+        <tr>
+            <td>
+                <p>Model X 75D</p>
+            </td>
+            <td>
+                <p>329</p>
+            </td>
+            <td>
+                <p>381</p>
+            </td>
+            <td>
+                <a type="button" class="btn btn-success" asp-controller="Cars" asp-action="Details" asp-route-id="4">Rent</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Model Y Performance</p>
+            </td>
+            <td>
+                <p>450</p>
+            </td>
+            <td>
+                <p>487</p>
+            </td>
+            <td>
+                <a type="button" class="btn btn-success" asp-controller="Cars" asp-action="Details" asp-route-id="6">Rent</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Tesla Roadster 2.5 Sport</p>
+            </td>
+            <td>
+                <p>288</p>
+            </td>
+            <td>
+                <p>249</p>
+            </td>
+            <td>
+                <a type="button" class="btn btn-success" asp-controller="Cars" asp-action="Details" asp-route-id="8">Rent</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Model 3 Standard Range Plus</p>
+            </td>
+            <td>
+                <p>201</p>
+            </td>
+            <td>
+                <p>402</p>
+            </td>
+            <td>
+                <a type="button" class="btn btn-success" asp-controller="Cars" asp-action="Details" asp-route-id="10">Rent</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Model Y Long Range AWD</p>
+            </td>
+            <td>
+                <p>346</p>
+            </td>
+            <td>
+                <p>524</p>
+            </td>
+            <td>
+                <a type="button" class="btn btn-success" asp-controller="Cars" asp-action="Details" asp-route-id="12">Rent</a>
+            </td>
+        </tr>
     </tbody>
 </table>
+
+
