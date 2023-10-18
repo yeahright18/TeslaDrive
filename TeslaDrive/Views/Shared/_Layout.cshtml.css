@@ -50,8 +50,8 @@ button.accept-policy {
 
 .navbar {
   background: linear-gradient(228deg, rgba(58,180,62,0.4822303921568627) 0%, rgba(29,214,253,0.4738270308123249) 50%, rgba(69,252,99,0.4654236694677871) 100%);
+  font-size: 20px;
 }
 
-.body {
-  background: linear-gradient(228deg, rgba(58,180,62,0.11528361344537819) 0%, rgba(29,214,253,0.10127801120448177) 50%, rgba(69,252,99,0.09007352941176472) 100%);
-}
+
+
