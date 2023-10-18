@@ -27,19 +27,19 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td style="color:green; font-weight:bold;">
                 @Html.DisplayFor(modelItem => item.Model)
             </td>
-            <td>
+            <td style="color:red;">
                 @Html.DisplayFor(modelItem => item.Hp)
             </td>
-            <td>
+            <td style="color:blue;">
                 @Html.DisplayFor(modelItem => item.Range)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a type="button" class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a type="button" class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a type="button" class="btn btn-danger"  asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

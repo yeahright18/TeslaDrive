@@ -18,5 +18,7 @@ namespace TeslaDrive.Data
 
     public DbSet<TeslaDrive.Models.Alcudia> Alcudia { get; set; } = default!;
 
+    public DbSet<TeslaDrive.Models.Rent> Rent { get; set; } = default!;
+
     }
 }
