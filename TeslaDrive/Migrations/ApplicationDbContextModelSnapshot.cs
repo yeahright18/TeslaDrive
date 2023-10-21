@@ -238,7 +238,7 @@ namespace TeslaDrive.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Alcudia");
+                    b.ToTable("Alcudia", (string)null);
                 });
 
             modelBuilder.Entity("TeslaDrive.Models.Car", b =>
@@ -261,7 +261,7 @@ namespace TeslaDrive.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cars");
+                    b.ToTable("Cars", (string)null);
                 });
 
             modelBuilder.Entity("TeslaDrive.Models.PalmaAirport", b =>
@@ -278,7 +278,7 @@ namespace TeslaDrive.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PalmaAirport");
+                    b.ToTable("PalmaAirport", (string)null);
                 });
 
             modelBuilder.Entity("TeslaDrive.Models.PalmaCity", b =>
@@ -295,7 +295,7 @@ namespace TeslaDrive.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PalmaCity");
+                    b.ToTable("PalmaCity", (string)null);
                 });
 
             modelBuilder.Entity("TeslaDrive.Models.Rent", b =>
@@ -323,7 +323,7 @@ namespace TeslaDrive.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Rent");
+                    b.ToTable("Rent", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

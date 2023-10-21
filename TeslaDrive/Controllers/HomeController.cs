@@ -1,13 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using TeslaDrive.Data;
 using TeslaDrive.Models;
 
 namespace TeslaDrive.Controllers
 {
   public class HomeController : Controller
   {
-    private readonly ILogger<HomeController> _logger;
-
+      private readonly ILogger<HomeController> _logger;
+      
     public HomeController(ILogger<HomeController> logger)
     {
       _logger = logger;
